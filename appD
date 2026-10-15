@@ -1,2 +1,20 @@
-test
-add row
+#include <iostream>
+#include <cmath>
+int main() {
+    int start, end;
+    int j;
+    std::cout << "end: ";
+    std::cin >> end;
+    double sum_b = 0.0;
+    for (int i = 1; i <= end; ++i) {
+        std::cout << "digit: ";
+        std::cin >> j;
+        //bool is_odd = (j & 1) == 0;
+        if (j%2==0) {
+            sum_b += sin(j);
+        }
+    }
+    // --- Вывод результатов и сравнение ---
+    std::cout << "Sum: ";
+    std::cout << sqrt(sum_b);
+}
